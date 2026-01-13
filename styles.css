@@ -20,23 +20,22 @@ main {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
   gap: 2rem;
   padding: 5rem;
 
   & h1 {
     text-transform: uppercase;
-    color: rgb(190, 179, 179);
+    color: rgb(230, 222, 222);
 
     & span {
-      text-shadow: -1px 0px 14px rgba(248, 250, 251, 1);
+      text-shadow: -1px 0px 14px rgb(219, 243, 255);
     }
   }
 }
 
 .box-title {
   text-transform: uppercase;
-  color: rgb(190, 179, 179);
+  color: rgb(224, 224, 224);
   gap: 0.5rem;
   display: grid;
   text-align: center;
@@ -53,7 +52,7 @@ main {
 }
 
 .title-neon {
-  text-shadow: -1px 0px 14px rgba(18, 203, 236, 1);
+  text-shadow: -1px 0px 14px rgb(8, 218, 255);
 }
 
 .container {
@@ -297,5 +296,22 @@ main {
   }
   100% {
     transform: translateX(100%) rotate(45deg);
+  }
+}
+
+@media (max-width: 850px) {
+  main {
+    height: 100%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 50%;
   }
 }
