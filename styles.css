@@ -27,7 +27,15 @@ main {
   & h1 {
     text-transform: uppercase;
     color: rgb(190, 179, 179);
+
+    & span {
+      text-shadow: -1px 0px 14px rgba(248, 250, 251, 1);
+    }
   }
+}
+
+.title-neon {
+  text-shadow: -1px 0px 14px rgba(18, 203, 236, 1);
 }
 
 .container {

@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Botão Neon</title>
   </head>
   <body>
     <main>
-      <h1>Botão <span>Glow</span> e <span>Neon</span></h1>
+      <h1>Botão <span>Glow</span> e <span class="title-neon">Neon</span></h1>
       <div class="container">
         <div class="box-btn">
           <p class="btn-title">Antes (Sem estilo)</p>
@@ -23,7 +29,16 @@
           <button class="btn-boring neon">Clique aqui</button>
         </div>
       </div>
-      <div class="container"></div>
+      <div class="container">
+        <div class="card">
+          <h2>Card normal</h2>
+          <p>Sem efeito de vidro</p>
+        </div>
+        <div class="card glass">
+          <h2>Card normal</h2>
+          <p>Sem efeito de vidro</p>
+        </div>
+      </div>
     </main>
   </body>
 </html>
